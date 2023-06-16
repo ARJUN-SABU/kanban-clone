@@ -35,7 +35,7 @@
         "label": "Low",
         "title": "Onboarding Illustrations",
         "description": null,
-        "imageURLs": ["cardImage1"],
+        "imageURLs": ["projectImages/cardImage1"],
         "commentsCount": 14,
         "filesCount": 5
       },
@@ -43,7 +43,7 @@
         "label": "Low",
         "title": "Moodboard",
         "description": null,
-        "imageURLs": ["cardImage2", "cardImage3"],
+        "imageURLs": ["projectImages/cardImage2", "projectImages/cardImage3"],
         "commentsCount": 9,
         "filesCount": 10
       },
@@ -64,7 +64,7 @@
         "label": "Completed",
         "title": "Mobile App Design",
         "description": null,
-        "imageURLs": ["cardImage4"],
+        "imageURLs": ["projectImages/cardImage4"],
         "commentsCount": 12,
         "filesCount": 15
       },

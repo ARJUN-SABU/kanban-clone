@@ -1,55 +1,15 @@
 //styles
 import "../styles/Board.css";
 
-function Board() {
+//component
+import Card from "./Card";
+
+function Board({ boardData }) {
   return (
     <div className="board">
-      <h1>I am the board</h1>
-      <h1>I am the board</h1>
-      <h1>I am the board</h1>
-      <h1>I am the board</h1>
-      <h1>I am the board</h1>
-      <h1>I am the board</h1>
-      <h1>I am the board</h1>
-      <h1>I am the board</h1>
-      <h1>I am the board</h1>
-      <h1>I am the board</h1>
-      <h1>I am the board</h1>
-      <h1>I am the board</h1>
-      <h1>I am the board</h1>
-      <h1>I am the board</h1>
-      <h1>I am the board</h1>
-      <h1>I am the board</h1>
-      <h1>I am the board</h1>
-      <h1>I am the board</h1>
-      <h1>I am the board</h1>
-      <h1>I am the board</h1>
-      <h1>I am the board</h1>
-      <h1>I am the board</h1>
-      <h1>I am the board</h1>
-      <h1>I am the board</h1>
-      <h1>I am the board</h1>
-      <h1>I am the board</h1>
-      <h1>I am the board</h1>
-      <h1>I am the board</h1>
-      <h1>I am the board</h1>
-      <h1>I am the board</h1>
-      <h1>I am the board</h1>
-      <h1>I am the board</h1>
-      <h1>I am the board</h1>
-      <h1>I am the board</h1>
-      <h1>I am the board</h1>
-      <h1>I am the board</h1>
-      <h1>I am the board</h1>
-      <h1>I am the board</h1>
-      <h1>I am the board</h1>
-      <h1>I am the board</h1>
-      <h1>I am the board</h1>
-      <h1>I am the board</h1>
-      <h1>I am the board</h1>
-      <h1>I am the board</h1>
-      <h1>I am the board</h1>
-      <h1>I am the board 10</h1>
+      {boardData.cards.map((card) => (
+        <Card title={card.title} />
+      ))}
     </div>
   );
 }
