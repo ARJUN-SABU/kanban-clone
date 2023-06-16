@@ -16,10 +16,10 @@
   width: 100%;
   background-color: yellow;
   /* flex: 1; */
-  height: 600px;
+  /* height: 600px; */
   display: flex;
   justify-content: center;
-  overflow-y: scroll;
+  /* overflow-y: scroll; */
 }
 .boardScreen__boardsAndCards__boardContainer {
   border: 1px solid black;
