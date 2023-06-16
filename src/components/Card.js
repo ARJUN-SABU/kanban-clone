@@ -3,7 +3,7 @@ import "../styles/Card.css";
 
 function Card({ title }) {
   return (
-    <div className="card" draggable="true">
+    <div className="card card--draggable" draggable="true">
       <h1>{title}</h1>
     </div>
   );

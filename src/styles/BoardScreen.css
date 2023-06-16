@@ -24,3 +24,6 @@
 .boardScreen__boardsAndCards__boardContainer {
   border: 1px solid black;
 }
+.dragging {
+  opacity: 0.3 !important;
+}
