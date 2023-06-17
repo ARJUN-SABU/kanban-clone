@@ -23,11 +23,36 @@ function boxShadowChange(props) {
   return props.isDragging ? "0 0 10px 0 black" : "none";
 }
 
-function Board({ cards, boardId }) {
+function Board({ cards, boardId, boardName, themeColor }) {
   return (
     <div className={`boardContainer boardContainer--${boardId}`}>
-      <div>
-        <h1>Board Name</h1>
+      <div
+        className="boardContainer__top"
+        style={{
+          borderBottom: `3px solid ${themeColor}`,
+        }}
+      >
+        <div className="boardContainer__top__left">
+          <div
+            style={{
+              width: "8px",
+              height: "8px",
+              borderRadius: "100%",
+              backgroundColor: themeColor,
+            }}
+          ></div>
+          <p className="boardContainer__top__left__boardName">{boardName}</p>
+          <p className="boardContainer__top__left__cardCount">{cards.length}</p>
+        </div>
+
+        {boardName == "To Do" ? (
+          <img
+            className="boardContainer__top__addButton"
+            src="projectImages/middlescreen-invite-addbutton.svg"
+          ></img>
+        ) : (
+          ""
+        )}
       </div>
       <Droppable droppableId={boardId}>
         {(provided) => (
