@@ -28,7 +28,7 @@ function Board({ cards, boardId }) {
     <Droppable droppableId={boardId}>
       {(provided) => (
         <div
-          className="board"
+          className={`board board--${boardId}`}
           {...provided.droppableProps}
           ref={provided.innerRef}
         >

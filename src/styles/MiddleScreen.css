@@ -27,7 +27,7 @@
 .middlescreen__top__right {
   display: flex;
   align-items: center;
-  margin-right: 40px;
+  margin-right: 30px;
 }
 
 .middlescreen__top__right__invite {
@@ -59,7 +59,7 @@
 }
 
 .middlescreen__bottom__right {
-  margin-right: 40px;
+  margin-right: 30px;
   display: flex;
   align-items: center;
 }

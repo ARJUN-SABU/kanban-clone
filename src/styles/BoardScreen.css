@@ -16,12 +16,18 @@
 }
 
 .boardScreen__boardsAndCards {
-  border: 10px solid black;
-  /* width: 100%px; */
+  /* border: 10px solid black; */
+  width: 100%;
   display: flex;
   align-items: center;
-  width: max-content;
+  justify-content: center;
   height: 100%;
   overflow-x: scroll;
   overflow-y: hidden;
+}
+
+@media (max-width: 954px) {
+  .boardScreen__boardsAndCards {
+    width: max-content;
+  }
 }
