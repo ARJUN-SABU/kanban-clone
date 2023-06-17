@@ -92,9 +92,24 @@ function BoardScreen() {
     <div className="boardScreen">
       <div className="boardScreen__boardsAndCards">
         <DragDropContext onDragEnd={handleOnDragEnd}>
-          <Board cards={toDoList} boardId={"toDoList"} />
-          <Board cards={progressList} boardId={"progressList"} />
-          <Board cards={doneList} boardId={"doneList"} />
+          <Board
+            cards={toDoList}
+            boardId={"toDoList"}
+            boardName={"To Do"}
+            themeColor={"#5030E5"}
+          />
+          <Board
+            cards={progressList}
+            boardId={"progressList"}
+            boardName={"On Progress"}
+            themeColor={"#FFA500"}
+          />
+          <Board
+            cards={doneList}
+            boardId={"doneList"}
+            boardName={"Done"}
+            themeColor={"#8BC48A"}
+          />
         </DragDropContext>
       </div>
     </div>
