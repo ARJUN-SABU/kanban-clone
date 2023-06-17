@@ -1,8 +1,6 @@
-@import url("https://fonts.googleapis.com/css2?family=Courier+Prime&family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
-
 .navbar {
   width: 100%;
-  border: 4px solid black;
+  border-bottom: 1px solid #dbdbdb;
   background-color: white;
   display: flex;
   align-items: center;
