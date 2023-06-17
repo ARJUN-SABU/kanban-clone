@@ -8,12 +8,8 @@ import NavbarAndBoardScreen from "./components/NavbarAndBoardScreen";
 function App() {
   return (
     <div className="app">
-      <div className="app__sidebarContainer">
-        <Sidebar />
-      </div>
-      <div className="app__navbarAndBoardScreenContainer">
-        <NavbarAndBoardScreen />
-      </div>
+      <Sidebar />
+      <NavbarAndBoardScreen />
     </div>
   );
 }
