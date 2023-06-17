@@ -3,6 +3,7 @@
     "cardsCount": 4,
     "cards": [
       {
+        "id": "card1",
         "label": "Low",
         "title": "Brainstorming",
         "description": "Brainstorming brings team members' diverse experience into play.",
@@ -11,6 +12,7 @@
         "filesCount": 0
       },
       {
+        "id": "card2",
         "label": "High",
         "title": "Reasearch",
         "description": "User research helps you to create an optimal product for users.",
@@ -19,6 +21,7 @@
         "filesCount": 3
       },
       {
+        "id": "card3",
         "label": "High",
         "title": "Wireframes",
         "description": "Low fidelity wireframes include the most basic content and visuals.",
@@ -32,6 +35,7 @@
     "cardsCount": 3,
     "cards": [
       {
+        "id": "card4",
         "label": "Low",
         "title": "Onboarding Illustrations",
         "description": null,
@@ -40,6 +44,7 @@
         "filesCount": 5
       },
       {
+        "id": "card5",
         "label": "Low",
         "title": "Moodboard",
         "description": null,
@@ -48,6 +53,7 @@
         "filesCount": 10
       },
       {
+        "id": "card6",
         "label": "Medium",
         "title": "Lorem Ipsum",
         "description": "Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum.",
@@ -61,6 +67,7 @@
     "cardsCount": 2,
     "cards": [
       {
+        "id": "card7",
         "label": "Completed",
         "title": "Mobile App Design",
         "description": null,
@@ -69,6 +76,7 @@
         "filesCount": 15
       },
       {
+        "id": "card8",
         "label": "Completed",
         "title": "Design System",
         "description": "It just needs to adapt the UI from what you did before.",
