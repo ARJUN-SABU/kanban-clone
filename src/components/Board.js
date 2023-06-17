@@ -25,31 +25,36 @@ function boxShadowChange(props) {
 
 function Board({ cards, boardId }) {
   return (
-    <Droppable droppableId={boardId}>
-      {(provided) => (
-        <div
-          className={`board board--${boardId}`}
-          {...provided.droppableProps}
-          ref={provided.innerRef}
-        >
-          {cards?.map((card, index) => (
-            <Draggable key={card.id} draggableId={card.id} index={index}>
-              {(provided, snapshot) => (
-                <CardContainer
-                  ref={provided.innerRef}
-                  {...provided.draggableProps}
-                  {...provided.dragHandleProps}
-                  isDragging={snapshot.isDragging}
-                >
-                  <Card title={card.title} />
-                </CardContainer>
-              )}
-            </Draggable>
-          ))}
-          {provided.placeholder}
-        </div>
-      )}
-    </Droppable>
+    <div className={`boardContainer boardContainer--${boardId}`}>
+      <div>
+        <h1>Board Name</h1>
+      </div>
+      <Droppable droppableId={boardId}>
+        {(provided) => (
+          <div
+            className={`board board--${boardId}`}
+            {...provided.droppableProps}
+            ref={provided.innerRef}
+          >
+            {cards?.map((card, index) => (
+              <Draggable key={card.id} draggableId={card.id} index={index}>
+                {(provided, snapshot) => (
+                  <CardContainer
+                    ref={provided.innerRef}
+                    {...provided.draggableProps}
+                    {...provided.dragHandleProps}
+                    isDragging={snapshot.isDragging}
+                  >
+                    <Card title={card.title} />
+                  </CardContainer>
+                )}
+              </Draggable>
+            ))}
+            {provided.placeholder}
+          </div>
+        )}
+      </Droppable>
+    </div>
   );
 }
 
