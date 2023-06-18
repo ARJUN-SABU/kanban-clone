@@ -16,7 +16,7 @@ function NavbarAndBoardScreen() {
   return (
     <div className="navbarAndBoardScreen">
       <Navbar />
-      {window.innerWidth <= 654 && (
+      {(window.innerWidth <= 654 || window.innerHeight <= 400) && (
         <button className="middleScreenToggler" onClick={toggleMiddleScreen}>
           Click here for more options.
         </button>
