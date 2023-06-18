@@ -14,11 +14,11 @@ const CardContainer = styled.div`
   align-items: center;
   border-radius: 20px;
   padding: 0.5em 0.8em 0.5em 0.5em;
-  margin: 10px 12px;
+  margin: 0px 12px 20px;
 `;
 
 function boxShadowChange(props) {
-  return props.isDragging ? "0 0 10px 0 black" : "none";
+  return props.isDragging ? "0 0 20px 0 rgba(196,196,196,0.3)" : "none";
 }
 
 function Board({ cards, boardId, boardName, themeColor }) {
