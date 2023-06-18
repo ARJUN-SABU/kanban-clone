@@ -3,7 +3,7 @@ import "../styles/MiddleScreen.css";
 
 function MiddleScreen() {
   useEffect(() => {
-    if (window.innerWidth <= 654) {
+    if (window.innerWidth <= 654 || window.innerHeight <= 400) {
       document
         .querySelector(".middlescreen")
         .classList.add("middlescreen--hide");
