@@ -11,10 +11,8 @@ import Card from "./Card";
 const CardContainer = styled.div`
   box-shadow: ${(props) => boxShadowChange(props)};
   background-color: white;
-  display: flex;
   align-items: center;
-  border: solid 2px #d0d0d0;
-  border-radius: 0.2em;
+  border-radius: 20px;
   padding: 0.5em 0.8em 0.5em 0.5em;
   margin: 10px 12px;
 `;
@@ -70,7 +68,7 @@ function Board({ cards, boardId, boardName, themeColor }) {
                     {...provided.dragHandleProps}
                     isDragging={snapshot.isDragging}
                   >
-                    <Card title={card.title} />
+                    <Card cardDetails={card} />
                   </CardContainer>
                 )}
               </Draggable>
