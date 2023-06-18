@@ -58,9 +58,24 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  overflow-x: scroll;
 }
 
 .card__imageContainer img {
   flex: 1;
   /* margin: 10px; */
+}
+
+@media (max-width: 1348px) {
+  .card__section2 {
+    flex-wrap: wrap;
+  }
+  .card__section2__right {
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 10px;
+  }
+  .card__section2__right__utility {
+    margin-left: 0px;
+  }
 }

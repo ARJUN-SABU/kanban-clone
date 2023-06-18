@@ -1,7 +1,27 @@
+//libraries and modules
+import { useEffect } from "react";
+
 //styles
 import "../styles/Sidebar.css";
 
 function Sidebar() {
+  useEffect(() => {
+    if (window.innerWidth <= 834)
+      document.querySelector(".sidebar").classList.add("sidebar--hide");
+  }, []);
+
+  function handleSideBarVisibility() {
+    if (window.innerWidth <= 834) {
+      document.querySelector(".sidebar").classList.toggle("sidebar--hide");
+    }
+
+    if (window.innerWidth <= 500) {
+      document.querySelector(".navbar__right__userInfo").classList.add("hide");
+      document
+        .querySelector(".navbar__middle__utilityIcons")
+        .classList.add("hide");
+    }
+  }
   return (
     <div className="sidebar">
       <div className="sidebar__top">
@@ -9,7 +29,10 @@ function Sidebar() {
           <img src="projectImages/sidebar-logo.svg" />
           <h1>Project M.</h1>
         </div>
-        <img src="projectImages/sidebar-top-backicon.svg" />
+        <img
+          onClick={handleSideBarVisibility}
+          src="projectImages/sidebar-top-backicon.svg"
+        />
       </div>
 
       <div className="sidebar__middle">

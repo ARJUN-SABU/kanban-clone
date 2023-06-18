@@ -3,7 +3,19 @@
   height: 100vh;
   /* width: 100%; */
   overflow-x: scroll;
+  /* overflow-y: scroll; */
   flex: 1;
   display: flex;
   flex-direction: column;
+}
+.middleScreenToggler {
+  background-color: #5030e5;
+  color: white;
+  outline: none;
+  border: none;
+  padding: 10px 20px;
+  margin-bottom: 20px;
+  width: 100%;
+  white-space: nowrap;
+  overflow-x: hidden;
 }

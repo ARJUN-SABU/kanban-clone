@@ -1,9 +1,48 @@
+import { useEffect } from "react";
+
 import "../styles/Navbar.css";
 
 function Navbar() {
+  useEffect(() => {
+    if (window.innerWidth <= 500) {
+      document.querySelector(".navbar__right__userInfo").classList.add("hide");
+      document
+        .querySelector(".navbar__middle__utilityIcons")
+        .classList.add("hide");
+    }
+  }, []);
+
+  function toggleUserInfo() {
+    if (window.innerWidth <= 500) {
+      document
+        .querySelector(".navbar__right__userInfo")
+        .classList.toggle("hide");
+      document
+        .querySelector(".navbar__middle__utilityIcons")
+        .classList.toggle("hide");
+    }
+  }
+
+  function handleSideBarVisibility() {
+    document.querySelector(".sidebar").classList.toggle("sidebar--hide");
+    if (window.innerWidth <= 500) {
+      document.querySelector(".navbar__right__userInfo").classList.add("hide");
+      document
+        .querySelector(".navbar__middle__utilityIcons")
+        .classList.add("hide");
+    }
+  }
+
   return (
     <div className="navbar">
-      <div className="navbar__left"></div>
+      {window.innerWidth <= 834 && (
+        <div className="navbar__left">
+          <img
+            onClick={handleSideBarVisibility}
+            src="projectImages/sidebar-logo.svg"
+          />
+        </div>
+      )}
       <div className="navbar__middle">
         <div className="navbar__middle__searchbar">
           <img src="projectImages/search-icon.svg"></img>
@@ -16,7 +55,7 @@ function Navbar() {
         </div>
       </div>
       <div className="navbar__right">
-        <div className="navbar__right__userAvatar">
+        <div className="navbar__right__userAvatar" onClick={toggleUserInfo}>
           <img src="projectImages/navbar-avatar.svg" />
           <img
             className="navbar__right__dropdownarrow"

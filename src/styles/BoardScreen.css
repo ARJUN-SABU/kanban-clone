@@ -1,7 +1,10 @@
 .boardScreen {
   /* background-color: orange; */
   width: 100%;
+
   flex: 1;
+
+  /* height: 100vh; */
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -26,8 +29,14 @@
   overflow-y: hidden;
 }
 
-@media (max-width: 954px) {
+@media (max-width: 1236px) {
   .boardScreen__boardsAndCards {
     width: max-content;
   }
 }
+
+/* @media (max-width: 659px) {
+  .boardContainer {
+    height: 100vh;
+  }
+} */
