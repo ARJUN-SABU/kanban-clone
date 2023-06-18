@@ -44,7 +44,7 @@ function MiddleScreen() {
               className="middlescreen__bottom__left__button__icon"
               src="projectImages/middlescreen-calendar.svg"
             />
-            <p>Filter</p>
+            <p>Today</p>
             <img
               className="middlescreen__bottom__left__dropdown"
               src="projectImages/arrow-down.svg"

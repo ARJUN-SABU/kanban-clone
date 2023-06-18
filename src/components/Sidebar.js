@@ -76,7 +76,7 @@ function Sidebar() {
                   backgroundColor: "#7AC555",
                 }}
               ></div>
-              <p>Mobile Apps</p>
+              <p>Mobile App</p>
             </div>
             <img
               src="projectImages/menu-selector-dots.svg"
