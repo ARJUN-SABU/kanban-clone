@@ -5,8 +5,11 @@
   display: flex;
   align-items: center;
   padding: 16px 0;
+  overflow-x: hidden;
 }
-
+.navbar__left {
+  margin-left: 10px;
+}
 .navbar__middle {
   display: flex;
   align-items: center;
@@ -26,6 +29,7 @@
   border-radius: 6px;
 }
 .navbar__middle__searchbar input {
+  width: 100%;
   border: none;
   outline: none;
   flex: 1;
@@ -75,6 +79,7 @@
 .navbar__right__username {
   font-weight: 400;
   font-size: 14px;
+  text-align: right;
 }
 
 .navbar__right__userlocation {
@@ -86,4 +91,72 @@
 .navbar__right__dropdownarrow {
   margin-left: 6px;
   width: 15px;
+}
+
+.hide {
+  display: none;
+}
+
+@media (max-width: 869px) {
+  .navbar__middle {
+    padding: 0px 0px 0px 10px;
+  }
+  .navbar__right {
+    padding: 0 10px 0 10px;
+  }
+  .navbar__middle__searchbar img {
+    width: 17px;
+    margin-right: 8px;
+  }
+  .navbar__middle__utilityIcons img {
+    margin: 10px;
+    width: 18px;
+  }
+}
+
+@media (max-width: 500px) {
+  .navbar__right {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-left: 0;
+  }
+
+  .navbar__right__userInfo {
+    align-items: center;
+    background-color: white;
+    /* box-shadow: 0 0 20px 0 rgba(196, 196, 196, 0.3); */
+    position: absolute;
+    top: 60px;
+    right: 10px;
+    width: max-content;
+    padding: 10px 20px;
+    border: 1px solid black;
+    border-bottom: none;
+  }
+
+  .navbar__right__userAvatar {
+    margin-left: 0px;
+  }
+
+  .navbar__right__username {
+    text-align: center;
+  }
+
+  .navbar__right__userlocation {
+    text-align: center;
+  }
+  .navbar__middle__utilityIcons {
+    background-color: white;
+    position: absolute;
+    top: 115px;
+    right: 10px;
+    border: 1px solid black;
+    padding: 10px 12px;
+  }
+
+  .navbar__middle__searchbar {
+    width: 100%;
+    margin-right: 10px;
+  }
 }

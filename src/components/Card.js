@@ -39,8 +39,9 @@ function Card({ cardDetails }) {
       )}
       {cardDetails.imageURLs ? (
         <div className="card__imageContainer">
-          {cardDetails.imageURLs.map((url) => (
+          {cardDetails.imageURLs.map((url, index) => (
             <img
+              key={index}
               src={`${url}`}
               style={{
                 margin: `${cardDetails.imageURLs.length > 1 ? "0 5px" : "0"}`,

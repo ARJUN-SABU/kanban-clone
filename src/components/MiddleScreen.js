@@ -1,6 +1,15 @@
+import { useEffect } from "react";
 import "../styles/MiddleScreen.css";
 
 function MiddleScreen() {
+  useEffect(() => {
+    if (window.innerWidth <= 654) {
+      document
+        .querySelector(".middlescreen")
+        .classList.add("middlescreen--hide");
+    }
+  }, []);
+
   return (
     <div className="middlescreen">
       <div className="middlescreen__top">
