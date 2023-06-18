@@ -74,6 +74,9 @@
   font-size: 12px;
   font-weight: 800;
 }
+.sidebar__bottom__title img {
+  cursor: pointer;
+}
 
 .sidebar__bottom__category {
   display: flex;
