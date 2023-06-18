@@ -2,4 +2,65 @@
   /* border: 1px solid black; */
   /* margin: 10px 12px; */
   /* cursor: grab; */
+  padding: 12px 12px;
+}
+
+.card__section1 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.card__section1 p {
+  width: max-content;
+  font-size: 13px;
+  padding: 5px 6px;
+  border-radius: 6px;
+  font-weight: 600;
+}
+
+.card__title {
+  font-size: 21px;
+  margin: 5px 0 7px 0;
+  font-weight: 600;
+}
+
+.card__description {
+  font-size: 13px;
+  color: #787486;
+}
+
+.card__section2 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+
+.card__section2__right {
+  display: flex;
+  align-items: center;
+}
+
+.card__section2__right__utility {
+  display: flex;
+  align-items: center;
+  margin-left: 10px;
+}
+
+.card__section2__right__utility p {
+  color: #787486;
+  font-size: 13px;
+  margin-left: 4px;
+}
+
+.card__imageContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.card__imageContainer img {
+  flex: 1;
+  /* margin: 10px; */
 }

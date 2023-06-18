@@ -9,7 +9,8 @@
         "description": "Brainstorming brings team members' diverse experience into play.",
         "imageURLs": null,
         "commentsCount": 12,
-        "filesCount": 0
+        "filesCount": 0,
+        "users": "projectImages/card-users-1.svg"
       },
       {
         "id": "card2",
@@ -18,7 +19,8 @@
         "description": "User research helps you to create an optimal product for users.",
         "imageURLs": null,
         "commentsCount": 10,
-        "filesCount": 3
+        "filesCount": 3,
+        "users": "projectImages/card-users-2.svg"
       },
       {
         "id": "card3",
@@ -27,7 +29,8 @@
         "description": "Low fidelity wireframes include the most basic content and visuals.",
         "imageURLs": null,
         "commentsCount": 8,
-        "filesCount": 0
+        "filesCount": 0,
+        "users": "projectImages/card-users-7.svg"
       }
     ]
   },
@@ -39,18 +42,23 @@
         "label": "Low",
         "title": "Onboarding Illustrations",
         "description": null,
-        "imageURLs": ["projectImages/cardImage1"],
+        "imageURLs": ["projectImages/cardImage1.svg"],
         "commentsCount": 14,
-        "filesCount": 5
+        "filesCount": 5,
+        "users": "projectImages/card-users-4.svg"
       },
       {
         "id": "card5",
         "label": "Low",
         "title": "Moodboard",
         "description": null,
-        "imageURLs": ["projectImages/cardImage2", "projectImages/cardImage3"],
+        "imageURLs": [
+          "projectImages/cardImage2.svg",
+          "projectImages/cardImage3.svg"
+        ],
         "commentsCount": 9,
-        "filesCount": 10
+        "filesCount": 10,
+        "users": "projectImages/card-users-5.svg"
       },
       {
         "id": "card6",
@@ -59,7 +67,8 @@
         "description": "Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum.",
         "imageURLs": null,
         "commentsCount": 3,
-        "filesCount": 7
+        "filesCount": 7,
+        "users": "projectImages/card-users-2.svg"
       }
     ]
   },
@@ -71,9 +80,10 @@
         "label": "Completed",
         "title": "Mobile App Design",
         "description": null,
-        "imageURLs": ["projectImages/cardImage4"],
+        "imageURLs": ["projectImages/cardImage4.svg"],
         "commentsCount": 12,
-        "filesCount": 15
+        "filesCount": 15,
+        "users": "projectImages/card-users-6.svg"
       },
       {
         "id": "card8",
@@ -82,7 +92,8 @@
         "description": "It just needs to adapt the UI from what you did before.",
         "imageURLs": null,
         "commentsCount": 12,
-        "filesCount": 15
+        "filesCount": 15,
+        "users": "projectImages/card-users-7.svg"
       }
     ]
   }
